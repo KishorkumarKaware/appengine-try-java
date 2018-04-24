@@ -13,6 +13,8 @@
 	SendMail sm;
 	%>
 	<%
+	try
+	{
 		userEmail_id = request.getParameter("email");
 		String subject = request.getParameter("subject");
 		msg = request.getParameter("message");
@@ -22,7 +24,13 @@
 			sm = new SendMail();
 			sm.sendMail(name, userEmail_id, subject, msg);
 		}
+	
 	%>
 	<jsp:forward page="contact.jsp"></jsp:forward>
+	<%}catch(Exception e){%>
+		<jsp:forward page="mailError.jsp"></jsp:forward>
+	<%}
+		%>
+
 </body>
 </html>
