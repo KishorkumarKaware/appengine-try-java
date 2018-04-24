@@ -88,14 +88,14 @@ Body Section
 <div id="sidebar" class="span3">
 <div class="well well-small">
 	<ul class="nav nav-list">
-		<li><a href="products.html"><span class="icon-chevron-right"></span>Humans</a></li>
-		<li><a href="products.html"><span class="icon-chevron-right"></span>Lamp</a></li>
-		<li><a href="products.html"><span class="icon-chevron-right"></span>Boats</a></li>
-		<li><a href="products.html"><span class="icon-chevron-right"></span>Candle Stand</a></li>
-		<li><a href="products.html"><span class="icon-chevron-right"></span>Home Decore</a></li>
-		<li><a href="products.html"><span class="icon-chevron-right"></span>Key Holder</a></li>
-		<li><a href="products.html"><span class="icon-chevron-right"></span>Instruments </a></li>
-		<li><a href="products.html"><span class="icon-chevron-right"></span>Other</a></li>
+		<li><a href="products.jsp"><span class="icon-chevron-right"></span>Humans</a></li>
+		<li><a href="products.jsp"><span class="icon-chevron-right"></span>Lamp</a></li>
+		<li><a href="products.jsp"><span class="icon-chevron-right"></span>Boats</a></li>
+		<li><a href="products.jsp"><span class="icon-chevron-right"></span>Candle Stand</a></li>
+		<li><a href="products.jsp"><span class="icon-chevron-right"></span>Home Decore</a></li>
+		<li><a href="products.jsp"><span class="icon-chevron-right"></span>Key Holder</a></li>
+		<li><a href="products.jsp"><span class="icon-chevron-right"></span>Instruments </a></li>
+		<li><a href="products.jsp"><span class="icon-chevron-right"></span>Other</a></li>
 		<li style="border:0"> &nbsp;</li>
 	</ul>
 </div>
