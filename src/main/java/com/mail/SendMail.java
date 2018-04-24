@@ -12,6 +12,7 @@ import javax.mail.Multipart;
 import javax.mail.PasswordAuthentication;
 import javax.mail.Session;
 import javax.mail.Transport;
+import javax.mail.internet.AddressException;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage; 
@@ -25,11 +26,11 @@ public class SendMail
 		
 	}
 	
-	public String sendMail(String name,String userEmail_id,String subject,String msg)
+	public String sendMail(String name,String userEmail_id,String subject,String msg) throws AddressException, MessagingException
 	{
 		
 		//request.setAttribute("imageUrlList", imageUrlList);
-		String email_id = "kishorkumarkaware20@gmail.com";
+		String email_id = "shubhamgawande84@gmail.com";
 		System.out.println("Sending mail to "+email_id);
 		Properties props = new Properties();    
 		props.put("mail.smtp.host", "smtp.gmail.com");    
@@ -43,7 +44,7 @@ public class SendMail
 		{ return new PasswordAuthentication(from,password); } } );
 
 
-		try{  
+		
 			MimeMessage message = new MimeMessage(session);  
 			message.setFrom(new InternetAddress(from));  
 			message.addRecipient(Message.RecipientType.TO,new InternetAddress(email_id));  
@@ -60,11 +61,8 @@ public class SendMail
 			System.out.println("The Mail is successfully sent to the admin");
 			return "The Mail is successfully sent to the admin.";
 
-		}catch (MessagingException ex) {ex.printStackTrace();}  
-
-		return "Sorry! Something is going wrong, please try again.";
 	}
-	public static String sendMailToUser(String name,String userEmail_id,String subject,String msg)
+	public static String sendMailToUser(String name,String userEmail_id,String subject,String msg) throws AddressException, MessagingException
 	{
 		String email_id = userEmail_id;
 		System.out.println("Sending mail to "+email_id);
@@ -83,7 +81,7 @@ public class SendMail
 				     +",\nThank for contacting us!"
 				     +"\nWe will contact you soon.";
 
-		try{  
+		  
 			MimeMessage message = new MimeMessage(session);  
 			message.setFrom(new InternetAddress(from));  
 			message.addRecipient(Message.RecipientType.TO,new InternetAddress(email_id));  
@@ -100,12 +98,9 @@ public class SendMail
 			System.out.println("The Mail is successfully sent to "+name);
 			return "The Mail is successfully sent to the admin.";
 
-		}catch (MessagingException ex) {ex.printStackTrace();}  
-
-		return "Sorry! Something is going wrong, please try again.";
 	}
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws AddressException, MessagingException {
 		new SendMail().sendMail( "Kishorkumar Kaware","kishorkumar.kaware@automationedge.com","Test Mail Subject","massage");
 	}
 }
