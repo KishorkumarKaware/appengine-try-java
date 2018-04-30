@@ -50,7 +50,7 @@ window.cookieconsent.initialise({
 		}
 	
 	%>
-	<jsp:forward page="contact.jsp"></jsp:forward>
+	<jsp:forward page="mailSucces.jsp"></jsp:forward>
 	<%}catch(Exception e){%>
 		<jsp:forward page="mailError.jsp"></jsp:forward>
 	<%}

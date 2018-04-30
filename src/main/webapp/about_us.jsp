@@ -150,7 +150,11 @@ Footer
 	<!-- /container -->
 
 	<div class="copyright">
+	
 		<div class="container">
+		<p class="pull-right">
+		<a href="#"><img src="assets/img/facebook.png" alt="facebbok-page"></a>
+	</p>
 			<span>Copyright &copy;2018<br>-Artifacts From
 				Chattisgarh, All rights reaserved
 			</span>
