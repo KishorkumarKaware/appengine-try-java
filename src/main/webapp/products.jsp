@@ -112,6 +112,10 @@ Body Section
 <!-- 
 Three column view
 -->
+	<p>
+To bye our product or if you need more info about products please <a href="contact.jsp">contact us </a>. 
+<br><br><b>Note:</b> Cash on delivery available for Pune city only.
+</p>
 	<h3>Our Products </h3>
 		<ul class="thumbnails">
 			<li class="span4">
